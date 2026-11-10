@@ -1,4 +1,37 @@
 Web VPython 3.2
+
+box(texture = "https://i.postimg.cc/htvNFVyX/ttttttt.png", size = vec(1, 1, 0.0001))
+boxes = []
+for i in range(3) : 
+    for j in range(3) : 
+        boxes.append(box(pos = vec((i-1)*0.3,(j-1)*0.3,0), size = vec(0.1,0.1,0.1)))
+
+while True :
+    rate(100)
+    k = keysdown()
+    if '1' in k :
+        boxes[0].color = color.red
+    if 'q' in k :
+        boxes[0].color = color.blue
+    if '4' in k :
+        boxes[3].color = color.red
+    if 'q' in k :
+        boxes[0].color = color.blue
+    if '7' in k :
+        boxes[6].color = color.red
+    if boxes[0].color == color.red and boxes[3].color == color.red and  boxes[6].color == color.red :
+        print('red team win')
+
+
+
+
+
+
+
+
+
+
+
 box(texture = "https://i.postimg.cc/vm93GQ03/ttt.png", size = vec(1,1,0.001))
 while True :
     rate(100)
