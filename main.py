@@ -4,7 +4,7 @@ box(texture = "https://i.postimg.cc/htvNFVyX/ttttttt.png", size = vec(1, 1, 0.00
 boxes = []
 for i in range(3) : 
     for j in range(3) : 
-        boxes.append(box(pos = vec((i-1)*0.3,(j-1)*0.3,0), size = vec(0.1,0.1,0.1)))
+        boxes.append(box(pos = vec((i-1)*0.3,(j-1)*0.3, 0), size = vec(0.1,0.1,0.1)))
 
 while True :
     rate(100)
@@ -37,7 +37,6 @@ while True :
 
     if boxes[2].color == color.red and boxes[5].color == color.red and boxes[8].color == color.red :
         print('red team win')
-
   
     if boxes[0].color == color.red and boxes[1].color == color.red and boxes[2].color == color.red :
         print('red team win')
@@ -72,3 +71,28 @@ while True :
         boxes[3].color = color.blue
     if 'o' in k :
         boxes[6].color = color.blue
+ 
+    
+    if boxes[0].color == color.blue and boxes[3].color == color.blue and boxes[6].color == color.blue :
+        print('blue team win')
+      
+    if boxes[1].color == color.blue and boxes[4].color == color.blue and boxes[7].color == color.blue :
+        print('blue team win')
+
+    if boxes[2].color == color.blue and boxes[5].color == color.blue and boxes[8].color == color.blue :
+        print('blue team win')
+
+    if boxes[0].color == color.blue and boxes[1].color == color.blue and boxes[2].color == color.blue :
+        print('blue team win')
+      
+    if boxes[3].color == color.blue and boxes[4].color == color.blue and boxes[5].color == color.blue :
+        print('blue team win')
+
+    if boxes[6].color == color.blue and boxes[7].color == color.blue and boxes[8].color == color.blue :
+        print('blue team win')
+      
+    if boxes[2].color == color.blue and boxes[4].color == color.blue and boxes[6].color == color.blue :
+        print('blue team win')
+      
+    if boxes[0].color == color.blue and boxes[4].color == color.blue and boxes[8].color == color.blue :
+        print('blue team win')
